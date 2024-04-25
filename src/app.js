@@ -12,8 +12,6 @@ window.onload = function() {
     return who[whoRandom];
   }
 
-  // console.log(whoPhrase(who))
-
   let action = ["ate ", "peed ", "crushed ", "broke "];
 
   function actionPhrase() {
@@ -21,16 +19,12 @@ window.onload = function() {
     return action[actionRandom];
   }
 
-  // console.log(actionPhrase(action))
-
   let what = ["my homework ", "my phone ", "the car "];
 
   function whatPhrase() {
     let whatRandom = Math.floor(Math.random() * 3);
     return what[whatRandom];
   }
-
-  // console.log(whatPhrase(what))
 
   let when = [
     "before the class",
@@ -46,10 +40,7 @@ window.onload = function() {
   }
 
   let excuse = whoPhrase() + actionPhrase() + whatPhrase() + whenPhrase();
-  // console.log(excuse);
 
   let element = document.getElementById("excuse");
   element.innerHTML = excuse;
 };
-
-// console.log(whenPhrase(when))
